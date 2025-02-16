@@ -1,0 +1,329 @@
+/*  Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right bottom, #25a482, #2e67ae);
+}
+
+/* Centered Layout */
+.login-page,
+.login-container,
+.otp-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+}
+
+.dashboard-container {
+  padding: 5px;
+  margin-left: 10rem;
+  margin-right: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vh;
+}
+
+.smallcard,
+.right-side,
+.card-large {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* small card */
+
+.smallcard {
+  height: 200px;
+  width: 250px;
+  margin: 17px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.card-value,
+.card-value1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 1px;
+  padding-left: 10px;
+}
+
+.chart-box {
+  flex-grow: 1;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.chart-box canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* middle card */
+
+.battery-card {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+.card-header1 {
+  margin: 5px;
+  padding: 5px;
+  text-align: justify;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+}
+.card-value1 {
+  align-items: center;
+  justify-content: center;
+}
+
+.card-value1 {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* middle card */
+.right-side {
+  height: 100%;
+}
+
+.card-header,
+.card-value {
+  color: white;
+  text-align: justify;
+  margin: 5px;
+}
+
+.main {
+  height: 500px;
+  gap: 10px;
+}
+
+/* large card */
+.card-large {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  height: 520px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-header3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.chart-box3 {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.chart-box3 canvas {
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Outer Card - Adjusted */
+.outercard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  gap: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Containers */
+.email-container,
+.otp-container,
+.sideby1 {
+  padding: 20px;
+  width: 400px;
+  min-width: 300px;
+  max-width: 90%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Email Left Side */
+.sideby {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 25px 0 0 25px;
+}
+
+/* Right Side */
+.sideby1 {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+  border-radius: 0 25px 25px 0;
+}
+
+/* Tablet View */
+@media (max-width: 888px) {
+  .outercard {
+    flex-direction: column;
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  .email-container {
+    border-radius: 25px 25px 0 0;
+    padding-top: 5px;
+    margin: 5px;
+  }
+
+  .sideby1 {
+    border-radius: 0 0 25px 25px;
+    padding-bottom: 5px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .outercard {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+  }
+
+  .email-container,
+  .sideby1 {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .email-container {
+    border-radius: 25px 0 0 25px;
+  }
+
+  .sideby1 {
+    border-radius: 0 25px 25px 0;
+  }
+}
+
+/* Input Fields */
+input {
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+  max-width: 250px;
+  min-width: 180px;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(to right, #218838, #1e7e34);
+}
+
+/* Timer */
+.timer-text {
+  font-size: 14px;
+  color: #ffcc00;
+  margin-top: 10px;
+}
+
+/* Resend OTP Button */
+.resend-otp {
+  background: none;
+  color: white;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.resend-otp:hover {
+  color: #ffcc00;
+}
