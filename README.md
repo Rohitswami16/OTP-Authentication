@@ -24,8 +24,7 @@ It enhances security and user convenience by generating a **one-time password (O
 - **Libraries**:
   - 📧 `emailjs-com` → Send OTP via email
   - 📊 `chart.js` → Visual representation in the dashboard
-- **Storage**: Local storage / `data.json`
-- **Hosting**: Netlify / Vercel
+- **Hosting**: Netlify
 
 ---
 
@@ -38,10 +37,4 @@ It enhances security and user convenience by generating a **one-time password (O
 
 ---
 
-## 📦 Installation & Setup
-
-### 🔹 1. Clone the Repository
-```bash
-git clone https://github.com/Rohitswami16/your-repo-name.git
-cd your-repo-name
 
