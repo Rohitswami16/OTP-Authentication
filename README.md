@@ -36,5 +36,3 @@ It enhances security and user convenience by generating a **one-time password (O
 ✔ **Deployed for easy access**  
 
 ---
-
-
