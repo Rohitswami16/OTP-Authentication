@@ -22,7 +22,7 @@ const Login = () => {
   // footer
   const Footer = () => (
     <footer className={styles.footer}>
-      &copy; 2025, Greendzine Technologies Pvt. Ltd. All Rights Reserved.
+      &copy; 2025, All Rights Reserved.
     </footer>
   );
 
