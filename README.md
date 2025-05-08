@@ -15,7 +15,7 @@ It enhances security and user convenience by generating a **one-time password (O
    - If the user enters the correct OTP within the time limit, they are redirected to the **dashboard**.
    - Incorrect or expired OTPs will prompt the user to request a **new OTP**.
    - OTP data is managed using **local storage** or a **data.json** file.
-4. **Deployment**: Hosted on **Netlify or Vercel**.
+4. **Deployment**: Hosted on **Netlify**.
 
 ---
 
